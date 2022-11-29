@@ -1,0 +1,22 @@
+body {
+    background-image: url("background.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+form {
+    background-color: darkslategrey;
+    border-radius: 1rem;
+    width: 60%;
+    border: none;
+    
+}
+
+label {
+    display: block;
+}
+
+h1, p[id="description"] {
+    text-align: center;
+}
