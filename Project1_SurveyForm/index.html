@@ -9,15 +9,16 @@
 </head>
 
 <body>
+   <div class="paper-background">
+        <h1 id="title">DevLab Course Survey</h1>    
+            <p id="description"> <i>The survey helps us make this course <span class="even-better">even better</span> in the future. <br> Thank you for participating! </i></p>
 
-    <h1 id="title">DevLab Course Survey</h1>    
-        <p id="description"> <i>The survey helps us make this course <b>even better</b> in the future. <br> Thank you for participating! </i></p>
-        
+   </div>  
     <form id="survey-form" action="post" action="https://register-demo.freecodecamp.org">
     
         <fieldset>
-            <label id="name-label" for="name">First name: <input type="text" id="name" name="first-name" placeholder="First name" required></label>
-            <label for="last-name">Last name: <input type="text" id="last-name" name="last-name" placeholder="Last name" required></label>
+            <label id="name-label" for="name">First Name: <input type="text" id="name" name="first-name" placeholder="Your Name" required></label>
+            <label for="last-name">Last Name: <input type="text" id="last-name" name="last-name" placeholder="Your Last Name" required></label>
             <label id="email-label" for="email"> Email: <input type="email" id="email" name="email" placeholder="youremail@somemail.com"required></label>
         </fieldset>
 
@@ -31,13 +32,15 @@
             </select></label>   
         </fieldset>
 
+        <hr>
+
         <fieldset>
             <p>How would you rate your experience on the course so far?</p>
-                <label for="exceptional"><input type="radio" name="satisfaction" value="exceptional" id="exceptional">Exceptional</label>
-                <label for="good"><input type="radio" name="satisfaction"  value="good" id="good">Good</label>
-                <label for="ok"><input type="radio" name="satisfaction" value="ok" id="ok">Ok</label>
-                <label for="not-good"><input type="radio" name="satisfaction" value="not-good" id="not-good">Not good</label>
-                <label for="terrible"><input type="radio" name="satisfaction" value="terrible" id="terrible">Terrible</label>
+                <label for="exceptional"><input class="inline" type="radio" name="satisfaction" value="exceptional" id="exceptional">Exceptional</label>
+                <label for="good"><input class="inline" type="radio" name="satisfaction"  value="good" id="good">Good</label>
+                <label for="ok"><input class="inline" type="radio" name="satisfaction" value="ok" id="ok">Ok</label>
+                <label for="not-good"><input class="inline" type="radio" name="satisfaction" value="not-good" id="not-good">Not good</label>
+                <label for="terrible"><input class="inline" type="radio" name="satisfaction" value="terrible" id="terrible">Terrible</label>
         </fieldset>
 
         <fieldset>
@@ -50,12 +53,14 @@
             <label for="resources-grade">My grade is: <input name="resources-grade" id="resources-grade" type="number" min="1" max="5" placeholder="Grade"></label>
         </fieldset>
 
+        <hr>
+
         <fieldset>
             <p class="question">What would you like to see improved? (Please select all that apply)</p>
-            <label for="class-schedule"><input name="improve" id="class-schedule" value="class-schedule" type="checkbox">Class schedule</label>
-            <label for="teaching-style"><input name="improve" id="teaching-style" value="teaching-style" type="checkbox">Teaching style</label>
-            <label for="resources"><input name="improve" id="resources" value="resources" type="checkbox">Resources</label>
-            <label for="projects"><input name="improve" id="projects" value="projects" type="checkbox"> Projects and homework </label>
+            <label for="class-schedule"><input name="improve" class="inline" id="class-schedule" value="class-schedule" type="checkbox">Class schedule</label>
+            <label for="teaching-style"><input name="improve" class="inline" id="teaching-style" value="teaching-style" type="checkbox">Teaching style</label>
+            <label for="resources"><input name="improve" class="inline" id="resources" value="resources" type="checkbox">Resources</label>
+            <label for="projects"><input name="improve" class="inline" id="projects" value="projects" type="checkbox"> Projects and homework </label>
         </fieldset>
 
         <fieldset>
