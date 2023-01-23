@@ -1,0 +1,134 @@
+/* General styles for the document */
+
+body {
+  box-sizing: border-box;
+  min-width: 290px;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+  color: rgb(91, 89, 89);
+}
+
+/* All the header and heading elements */
+
+header {
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+  padding: 1rem 1rem 0 1rem;
+}
+
+/* The two main sections */
+#main-doc {
+  max-width: 70%;
+  margin: 1rem;
+  position: absolute;
+  margin-left: 25%;
+}
+
+#navbar {
+  border-right: 2px solid grey;
+  max-width: 25%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* The sections inside the doc */
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Single elements */
+p {
+  padding-left: 2rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid grey;
+}
+
+ul li:last-of-type {
+  border-bottom: 2px solid grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(91, 89, 89);
+}
+a:hover {
+  color: black;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+code {
+  background-color: #f7f7f7;
+  color: black;
+  display: block;
+  text-align: left;
+  margin: 1rem;
+  word-break: normal;
+  word-wrap: normal;
+  position: relative;
+  border-radius: 5px;
+  width: 50%;
+  align-self: center;
+  padding: 1rem;
+}
+
+/* Media query for phone */
+
+@media screen and (max-width: 648px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f7f7f7;
+    z-index: 2;
+  }
+
+  #main-doc {
+    top: 20rem;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+    overflow: auto;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  ul li {
+    border: none;
+  }
+
+  ul li:last-of-type {
+    border: none;
+  }
+
+  ul li:focus {
+    border-bottom: 1px solid grey;
+  }
+}
