@@ -12,59 +12,222 @@
       href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="home">
-      <header id="header">
+    <div id="home" class="home">
+      <header id="header" class="header">
         <img
           src="assets/logo.png"
           alt="Borcello Collection Logo."
-          id="header-image"
+          id="header-img"
         />
-        <div id="heading">
+        <div id="heading" class="heading">
           <h1>Borcello Collection</h1>
         </div>
-        <nav id="nav-bar">
-          <p><a class="nav-link underlined" href="">Home</a></p>
-          <p><a class="nav-link underlined" href="">About us</a></p>
-          <p><a class="nav-link underline" href="">Products</a></p>
+        <nav id="nav-bar" class="nav-bar">
+          <p><a class="nav-link underline" href="#home">Home</a></p>
+          <p><a class="nav-link underline" href="#about-us">About</a></p>
+          <p><a class="nav-link underline" href="#products">Products</a></p>
         </nav>
       </header>
-      <div id="landing-product">
-        <div id="landing-info">
+      <div class="landing-product">
+        <div class="landing-info">
           <h2>Each piece tells a unique story</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
             ab deserunt mollitia ex corporis sed quae laborum sit voluptatum
             distinctio minima alias, ea maiores.
           </p>
-          <br />
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam at
             quas laborum sit veritatis quos ea accusantium eveniet officia quis
             explicabo eaque tempore, ullam ex error eos ratione quo consequatur!
           </p>
-          <video
-            src="https://www.youtube.com/watch?v=LwkA5KvgCzo&ab_channel=NishEkanayake"
-          ></video>
+          <video class="landing-video" id="video" controls autoplay muted>
+            <source
+              src="https://www.youtube.com/watch?v=5ohaxp-gUGc&ab_channel=%40tiktok.aesthetic"
+            />
+          </video>
         </div>
-        <div id="landing-visual">
-          <img
-            src="assets/product-photo1.png"
-            alt="Hand-made golden hoop earrings."
-          />
-          <div class="product-info left">
-            <h3></h3>
-            <p></p>
-            <h3></h3>
+        <div class="landing-visual">
+          <div class="img-left">
+            <img
+              src="assets/product-photo1.png"
+              alt="Hand-made golden hoop earrings."
+            />
+            <div class="product-info left">
+              <h3>Simple hoop</h3>
+              <p>From</p>
+              <h3>&euro;39.99</h3>
+            </div>
+            <div class="product-info right">
+              <h3>Triple hoop</h3>
+              <p>From</p>
+              <h3>&euro;49.99</h3>
+            </div>
           </div>
-          <div class="product-info right">
-            <h3></h3>
-            <p></p>
-            <h3></h3>
+          <div class="img-right">
+            <img
+              src="assets/product-photo2.png"
+              alt="Model wearing hand-made asymetric golden hoop earrings."
+            />
           </div>
         </div>
       </div>
+    </div>
+    <div class="about-us" id="about-us">
+      <div class="about-info">
+        <h2>About us</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+          perspiciatis aspernatur nostrum voluptate eum cumque vel, magnam quia
+          mollitia neque autem sit minus illum impedit? Vero laboriosam ducimus
+          recusandae illum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+          asperiores perferendis quidem consectetur repellendus quo tempora ex
+          ipsam. Aut ipsam repellat molestiae aliquid fugit ab neque soluta
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+          iusto nisi sequi, odit earum commodi suscipit vero maxime esse ex
+          pariatur. Optio laborum, quod doloribus vero quibusdam deserunt dolor
+          hic.
+        </p>
+      </div>
+      <div class="about-img-container">
+        <div class="about-img one">
+          <img src="assets/about-photo-1.png" alt="A woman making jewelery" />
+        </div>
+        <div class="about-img two">
+          <img src="assets/about-photo-2.png" alt="Jewelery making tools." />
+        </div>
+      </div>
+
+      <div class="about-cards-container">
+        <div class="about-card">
+          <img src="assets/icon-set/1.png" alt="Icon 1" />
+          <p>
+            Sequi consectetur dolor adipisci modi corrupti a quo, illum laborum
+            commodi excepturi
+          </p>
+        </div>
+        <div class="about-card">
+          <img src="assets/icon-set/2.png" alt="Icon 2" />
+          <p>Libero, perspiciatis possimus?</p>
+        </div>
+        <div class="about-card">
+          <img src="assets/icon-set/3.png" alt="Icon 3" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="about-card">
+          <img src="assets/icon-set/4.png" alt="Icon 4" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="products" id="products">
+      <h2>Best sellers</h2>
+      <div class="product-cards-container">
+        <div class="product-card">
+          <img src="assets/product-imgs/5.png" alt="Gold jewelery" />
+          <div class="product-text-cont">
+            <h3 class="product-name">Bracelet</h3>
+            <p class="product-text small">9ct Yellow Gold Bracelet</p>
+            <p class="product-text caps">
+              <span class="beige-text">Metal type:</span> Plated gold
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Style:</span> Bracelet
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Sizes &amp; pricing:</span>
+            </p>
+            <p class="product-text small">
+              11mm - &euro;71.99 | 15mm - &euro;92.99
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/product-imgs/6.png" alt="Gold jewelery." />
+          <div class="product-text-cont">
+            <h3 class="product-name">Ring</h3>
+            <p class="product-text small">9ct Yellow Gold Ring</p>
+            <p class="product-text caps">
+              <span class="beige-text">Metal type:</span> Plated gold
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Style:</span> Ring
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Sizes &amp; pricing:</span>
+            </p>
+            <p class="product-text small">
+              11mm - &euro;71.99 | 15mm - &euro;92.99
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/product-imgs/7.png" alt="Gold jewelery" />
+          <div class="product-text-cont">
+            <h3 class="product-name">Hoop earrings</h3>
+            <p class="product-text small">9ct Yellow Gold Hoop earrings</p>
+            <p class="product-text caps">
+              <span class="beige-text">Metal type:</span> Plated gold
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Style:</span> Hoop
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Sizes &amp; pricing:</span>
+            </p>
+            <p class="product-text small">
+              11mm - &euro;71.99 | 15mm - &euro;92.99
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/product-imgs/8.png" alt="Gold jewelery" />
+          <div class="product-text-cont">
+            <h3 class="product-name">Necklace</h3>
+            <p class="product-text small">9ct Yellow Gold Necklace</p>
+            <p class="product-text caps">
+              <span class="beige-text">Metal type:</span> Plated gold
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Style:</span> Necklace
+            </p>
+            <p class="product-text caps">
+              <span class="beige-text">Sizes &amp; pricing:</span>
+            </p>
+            <p class="product-text small">
+              11mm - &euro;71.99 | 15mm - &euro;92.99
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h2>Be the first to catch awesome deals</h2>
+
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="get"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="youremail@email.com"
+        />
+        <input id="submit" type="submit" value="Sign up" />
+      </form>
     </div>
   </body>
 </html>
